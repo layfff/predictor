@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictor</title>
+  <script src="./scripts/app.js" defer></script>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <main class="content">
+    <h1 class="content__title">Предсказатель</h1>
+    <form class="form" id="form">
+      <input type="text" class="form__field field" placeholder="Введите что-то..." required data-js-field>
+      <button class="form__button button" type="submit" onclick=showAnswer()>Отправить</button>
+    </form>
+
+    <div class="answer">
+      <h2 class="answer__title">Ответ:</h2>
+      <p class="answer__text" data-js-answer>Нажмите на кнопку, чтобы увидеть ответ.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Данный сайт является шуточным и не призывает к действию</p>
+    <a href="#" class="footer__link">Gihub</a>
+  </footer>
+</body>
+</html>

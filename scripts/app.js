@@ -9,7 +9,6 @@ const answersArray = [
 ]
 const answerElement = document.querySelector("[data-js-answer]")
 const fieldElement = document.querySelector("[data-js-field]")
-console.log(answerElement)
 
 function getAnswer(answerArray) {
   const randomIndex = Math.floor(Math.random() * answerArray.length)
@@ -27,4 +26,5 @@ function showAnswer() {
 
 document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault(); // Останавливает перезагрузку
+
 });

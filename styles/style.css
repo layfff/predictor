@@ -1,0 +1,114 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --background-color: #131313;
+  --dark-color: #2e2e2e;
+  --light-color: #f3f3f3;
+  --accent-color: #ffed24;
+  --border-radius: 10px;
+  --transition-duration: 0.2s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--light-color);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.9;
+  font-weight: 400;
+  padding: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+button,
+a,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: var(--light-color);
+}
+
+.field {
+  background-color: var(--dark-color);
+  border: none;
+  box-shadow: none;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  color: var(--light-color);
+  height: 55px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-color);
+  border: none;
+  padding: 15px;
+  height: 42px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  border: 1px solid var(--light-color);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+  max-width: 670px;
+  width: 100%;
+
+  .content__title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: var(--accent-color);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+
+  .form__field {
+    width: 100%;
+  }
+
+  .form__button {
+    align-self: flex-end;
+  }
+}
+
+.answer {
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+  padding: 25px;
+}
+
+.footer {
+  text-align: center;
+
+  .footer__text, .footer__link {
+    opacity: 0.7;
+  }
+}
